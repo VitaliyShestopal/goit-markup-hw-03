@@ -125,6 +125,7 @@ address {
 }
 
 .hero-wrapper {
+    display: block;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -137,10 +138,9 @@ address {
     letter-spacing: 0.02em;
     line-height: 1.07;
     font-weight: 700;
+    margin: 0 auto;
     margin-bottom: 48px;
     max-width: 496px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .hero-button {
@@ -154,8 +154,8 @@ address {
     border-radius: 4px;
     border: none;
     padding: 16px 32px;
-    min-width: 169px;
-    height: 56px;
+    margin-top: 48px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
@@ -181,36 +181,40 @@ address {
     margin-bottom: 8px;
 }
 
+.team-container {
+    padding: 120px 0;
+}
+
 .Team-list {
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
+    align-items: center;
 }
 
 .Team-item {
     border-radius: 0 0 4px 4px;
-    background-color: #f4f4fd;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) / 4);
 }
 
 .Team-text {
-    padding-top: 120px;
     padding-bottom: 72px;
 }
 
+.image-container {
+    padding: 32px 16px;
+}
+
 .item-name {
-    padding-top: 32px;
     padding-bottom: 8px;
 }
 
-.item-work {
-    padding-top: 0;
-    padding-bottom: 32px;
-}
-.team {
+.team-section {
     background-color: #f4f4fd;
 }
 
-.team h2 {
+.team-section h2 {
     text-align: center;
     font-size: 36px;
     letter-spacing: 0.02em;
@@ -226,35 +230,39 @@ address {
     text-align: center;
 }
 
-.portfolio {
+.portfolio-container {
+    padding: 120px 0;
+}
+
+.portfolio-post {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-list {
+    width: calc((100% - 48px) / 3);
+}
+
+.post-subtitle {
+    padding-bottom: 72px;
     text-align: center;
     font-size: 36px;
     letter-spacing: 0.02em;
     line-height: 1.11;
     font-weight: 700;
-    padding-top: 120px;
-    padding-bottom: 72px;
 }
 
-.Portfolio-list {
+.img-port-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-}
-.Portfolio-item {
-    width: calc((100% - 48px) / 3);
-}
-
-.img-name {
-    padding-top: 32px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-}
-
-.img-work {
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-top: 0;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    box-sizing: border-box;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    padding: 32px 16px;
 }
 
 footer {
