@@ -31,7 +31,7 @@ a {
 }
 
 .container {
-    width: 1188px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -122,12 +122,11 @@ address {
 
 .hero {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-wrapper {
     display: block;
-    padding-top: 188px;
-    padding-bottom: 188px;
     text-align: center;
 }
 
@@ -154,7 +153,6 @@ address {
     border-radius: 4px;
     border: none;
     padding: 16px 32px;
-    margin-top: 48px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -163,7 +161,7 @@ address {
     background-color: #404bbf;
 }
 
-.features-wrapper {
+.features {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -181,7 +179,7 @@ address {
     margin-bottom: 8px;
 }
 
-.team-container {
+.team-section {
     padding: 120px 0;
 }
 
@@ -205,6 +203,7 @@ address {
 
 .image-container {
     padding: 32px 16px;
+    text-align: center;
 }
 
 .item-name {
@@ -231,7 +230,7 @@ address {
     text-align: center;
 }
 
-.portfolio-container {
+.portfolio-section {
     padding: 120px 0;
 }
 
